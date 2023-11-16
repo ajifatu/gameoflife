@@ -177,3 +177,16 @@ function updateGenerationCountDisplay() {
 // Initial display of generation count and speed
 updateGenerationCountDisplay();
 speedDisplay.textContent = `${defaultSpeed}ms`;
+
+// Event listener to toggle cell state on click event
+grid.addEventListener("click", function (event) {
+  const rect = grid.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  const clickedRow = Math.floor(y / cellSize);
+  const clickedCol = Math.floor(x / cellSize);
+
+  cellValues[clickedRow][clickedCol] = 1 - cellValues[clickedRow][clickedCol];
+
+  drawGrid();
+});
