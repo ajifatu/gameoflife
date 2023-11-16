@@ -11,8 +11,13 @@
     <canvas id="gamegrid" height="600" width="600"> </canvas>
     <div class="actionButtons">
       <button onclick="clearGrid()">Clear</button>
+      <button onclick="reloadGrid()">Load/Reload</button>
       <button onclick="startGame()">Start</button>
       <button onclick="stopGame()">Stop</button>
+      <button onclick="decreaseSpeed()">- Speed</button>
+      <h2 id="speed">Speed</h2>
+      <button onclick="increaseSpeed()">+ Speed</button>
+      <p>Generation: <span id="generationCount">0</span></p>
     </div>
     <script src="script.js"></script>
   </body>
