@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: blue;
+}
+
+#gamegrid {
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actionButtons button {
+  padding: 8px 16px;
+  margin: 0 10px;
+}
